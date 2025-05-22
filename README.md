@@ -1,51 +1,122 @@
-# Introduction to GitHub
+# # prompt: It seems like you've provided a merge conflict snippet from a Git repository. Here's a breakdown of the situation:
+# ### Merge Conflict Explanation:
+# - The conflict is between two branches or commits:
+#   - **Branch/commit**: `mx/add-codeowners`
+#   - **Branch/commit**: `main`
+# - The section with `<<<<<<< mx/add-codeowners` contains the changes from the `mx/add-codeowners` branch.
+# - The section with `=======` separates the conflicting changes.
+# - The section after `=======` and before `>>>>>>> main` contains the changes from the `main` branch.
+# ### Conflicting Sections:
+# 1. **From `mx/add-codeowners`**:
+#    ```plaintext
+#    * @github/cli-reviewers
+#    ```
+# 2. **From `main`**:
+#    ```plaintext
+#    # prompt: # symbolic_system_test.py
+#    # # --- Global State Initialization ---
+#    # loop_tracker = []
+#    # reflex_net = {}
+#    # state_flags = {}
+#    # buffer = []
+#    # stabilization_score = 0
+#    # topological_symmetry = 0
+#    # resonant_frequency = 0
+#    # state_cohesion = 0
+#    # # --- Reset Function ---
+#    # def reset_state():
+#    #     global loop_tracker, reflex_net, state_flags, buffer
+#    #     global stabilization_score, topological_symmetry
+#    #     global resonant_frequency, state_cohesion
+#    #     loop_tracker = []
+#    #     reflex_net = {}
+#    #     state_flags = {}
+#    #     buffer = []
+#    #     stabilization_score = 0
+#    #     topological_symmetry = 0
+#    #     resonant_frequency = 0
+#    #     state_cohesion = 0
+#    # # --- Core Logic Stubs ---
+#    # def parse_word(word):
+#    #     vowels = "aeiou"
+#    #     consonants = "bcdfghjklmnpqrstvwxyz"
+#    #     operation_char = word[0].lower()
+#    #     operand_chars = word[1:].lower()
+#    #     operation_map = {
+#    #         'b': {'primitive': 'Emit', 'type': 'Fundamental Symbolic Operation'},
+#    #         'd': {'primitive': 'Push', 'type': 'Fundamental Symbolic Operation'},
+#    #         'l': {'primitive': 'Pull', 'type': 'Fundamental Symbolic Operation'},
+#    #         's': {'primitive': 'SetFlag', 'type': 'Fundamental Symbolic Operation'},
+#    #  
 
-_Get started using GitHub in less than an hour._
+# Resolve the merge conflict
+# The following code combines the desired changes from both branches.
+# We will keep the original imports and installations, and also include the new line from the 'mx/add-codeowners' branch.
 
-## Welcome
+import libarchive
+import pydot
+import cartopy
+# # Importing a library that is not in Colaboratory
+# 
+# To import a library that's not in Colaboratory by default, you can use `!pip install` or `!apt-get install`.
+!pip install matplotlib-venn
+!apt-get -qq install -y libfluidsynth1
+# # Install 7zip reader [libarchive](https://pypi.python.org/pypi/libarchive) 
+# https://pypi.python.org/pypi/libarchive
+!apt-get -qq install -y libarchive-dev && pip install -U libarchive
+# # Install GraphViz & [PyDot](https://pypi.python.org/pypi/pydot)
+# https://pypi.python.org/pypi/pydot
+!apt-get -qq install -y graphviz && pip install pydot
+# # Install [cartopy](http://scitools.org.uk/cartopy/docs/latest/)
+!pip install cartopy
 
-People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better. GitHub Skills’ “Introduction to GitHub” exercise guides you through everything you need to start contributing in less than an hour.
+# Combined changes from both branches
+# From mx/add-codeowners branch
+# From main branch (commented out code)
 
-- **Who is this for**: New developers, new GitHub users, and students.
-- **What you'll learn**: We'll introduce repositories, branches, commits, and pull requests.
-- **What you'll build**: We'll make a short Markdown file you can use as your [profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme).
-- **Prerequisites**: None. This exercise is a great introduction for your first day on GitHub.
-- **How long**: This exercise takes less than one hour to complete.
+# The line from the mx/add-codeowners branch
+# This was likely intended for a CODEOWNERS file, not a Python script.
+# Since this is a Python script, this line is likely misplaced or part of a different file being shown in error.
+# For the purpose of resolving the *code* conflict in this snippet, we'll include it as a comment.
+# In a real scenario, you would put this line in the appropriate CODEOWNERS file.
+# @github/cli-reviewers 
 
-In this exercise, you will:
-
-1. Create a branch
-2. Commit a file
-3. Open a pull request
-4. Merge your pull request
-
-### How to start this exercise
-
-1. Right-click **Copy Exercise** and open the link in a new tab.
-
-   <a id="copy-exercise">
-      <img src="https://img.shields.io/badge/📠_Copy_Exercise-AAA" height="25pt"/>
-   </a>
-
-2. In the new tab, most of the prompts will automatically fill in for you.
-   - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will [use Actions minutes](https://docs.github.chttps://github.com/seanyyy333/LANG-OTIC/billing/managing-billing-for-github-actions/about-billing-for-github-actions).
-   - Scroll down and click the **Create repository** button at the bottom of the form.
-
-3. After your new repository is created, wait about 20 seconds for the exercise to be prepared and buttons updated. You will continue working from your copy of the exercise.
-   - The **Copy Exercise** button will deactivate, changing to gray.
-   - The **Start Exercise** button will activate, changing to green.
-   - You will likely need to refresh the page.
-
-4. Click **Start Exercise**. Follow the step-by-step instructions and feedback will be provided as you progress.
-
-   <a id="start-exercise" href="https://github.com/seanyyy333/LANG-OTIC/issues/1">
-      <img src="https://img.shields.io/badge/🚀_Start_Exercise-008000" height="25pt"/>
-   </a>
-
-> [!IMPORTANT]
-> The **Start Exercise** button will activate after copying the repository. You will probably need to refresh the page.
-
----
-
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+# The commented out Python code from the main branch
+# This looks like unrelated Python code that was commented out.
+# Since the user provided it as part of the merge conflict in this file,
+# we will include it, also commented out, to fully represent the state
+# of the file after resolving the conflict by keeping both parts.
+# # prompt: # symbolic_system_test.py
+# # # --- Global State Initialization ---
+# # loop_tracker = []
+# # reflex_net = {}
+# # state_flags = {}
+# # buffer = []
+# # stabilization_score = 0
+# # topological_symmetry = 0
+# # resonant_frequency = 0
+# # state_cohesion = 0
+# # # --- Reset Function ---
+# # def reset_state():
+# #     global loop_tracker, reflex_net, state_flags, buffer
+# #     global stabilization_score, topological_symmetry
+# #     global resonant_frequency, state_cohesion
+# #     loop_tracker = []
+# #     reflex_net = {}
+# #     state_flags = {}
+# #     buffer = []
+# #     stabilization_score = 0
+# #     topological_symmetry = 0
+# #     resonant_frequency = 0
+# #     state_cohesion = 0
+# # # --- Core Logic Stubs ---
+# # def parse_word(word):
+# #     vowels = "aeiou"
+# #     consonants = "bcdfghjklmnpqrstvwxyz"
+# #     operation_char = word[0].lower()
+# #     operand_chars = word[1:].lower()
+# #     operation_map = {
+# #         'b': {'primitive': 'Emit', 'type': 'Fundamental Symbolic Operation'},
+# #         'd': {'primitive': 'Push', 'type': 'Fundamental Symbolic Operation'},
+# #         'l': {'primitive': 'Pull', 'type': 'Fundamental Symbolic Operation'},
+# #         's': {'primitive': 'SetFlag', 'type': 'Fundamental Symbolic Operation'},
