@@ -1,3 +1,40 @@
+# prompt: # Compiled source #
+# ###################
+# *.com
+# *.class
+# *.dll
+# *.exe
+# *.o
+# *.so
+# # Packages #
+# ############
+# # it's better to unpack these files and commit the raw source
+# # git has its own built in compression methods
+# *.7z
+# *.dmg
+# *.gz
+# *.iso
+# *.jar
+# *.rar
+# *.tar
+# *.zip
+# # Logs and databases #
+# ######################
+# *.log
+# *.sql
+# *.sqlite
+# # OS generated files #
+# ######################
+# .DS_Store
+# .DS_Store?
+# ._*
+# .Spotlight-V100
+# .Trashes
+# ehthumbs.db
+# Thumbs.db
+
+%%bash
+cat << EOF > .gitignore
 # Compiled source #
 ###################
 *.com
@@ -6,7 +43,6 @@
 *.exe
 *.o
 *.so
-
 # Packages #
 ############
 # it's better to unpack these files and commit the raw source
@@ -19,13 +55,11 @@
 *.rar
 *.tar
 *.zip
-
 # Logs and databases #
 ######################
 *.log
 *.sql
 *.sqlite
-
 # OS generated files #
 ######################
 .DS_Store
@@ -35,3 +69,6 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+EOF
+
+cat .gitignore
