@@ -1,36 +1,5 @@
-# prompt: prompt: # # prompt: It seems like you've provided a merge conflict snippet from a Git repository. Here's a breakdown of the situation:
-# # ### Merge Conflict Explanation:
-# # - The conflict is between two branches or commits:
-# # - Branch/commit: mx/add-codeowners
-# # - Branch/commit: main
-# # - The section with <<<<<<< mx/add-codeowners contains the changes from the mx/add-codeowners branch.
-# # - The section with ======= separates the conflicting changes.
-# # - The section after ======= and before >>>>>>> main contains the changes from the main branch.
-# # ### Conflicting Sections:
-# # 1. From mx/add-codeowners:
-# # ```plaintext
-# prompt: prompt: # # prompt: It seems like you've provided a merge conflict snippet from a Git repository. Here's a breakdown of the situation:
-# # ### Merge Conflict Explanation:
-# # - The conflict is between two branches or commits:
-# # - Branch/commit: mx/add-codeowners
-# # - Branch/commit: main
-# # - The section with <<<<<<< mx/add-codeowners contains the changes from the mx/add-codeowners branch.
-# # - The section with ======= separates the conflicting changes.
-# # - The section after ======= and before >>>>>>> main contains the changes from the main branch.
-# # ### Conflicting Sections:
-# # 1. From mx/add-codeowners:
-# # ```plaintext
-# prompt: prompt: # # prompt: It seems like you've provided a merge conflict snippet from a Git repository. Here's a breakdown of the situation:
-# # ### Merge Conflict Explanation:
-# # - The conflict is between two branches or commits:
-# # - Branch/commit: mx/add-codeowners
-# # - Branch/commit: main
-# # - The section with <<<<<<< mx/add-codeowners contains the changes from the mx/add-codeowners branch.
-# # - The section with ======= separates the conflicting changes.
-# # - The section after ======= and before >>>>>>> main contains the changes from the main branch.
-# # ### Conflicting Sections:
-# # 1. From mx/add-codeowners:
-# # ```plaintext
+
+
 # prompt: prompt: # # prompt: It seems like you've provided a merge conflict snippet from a Git repository. Here's a breakdown of the situation:
 # # ### Merge Conflict Explanation:
 # # - The conflict is between two branches or commits:
@@ -81,11 +50,15 @@
 # #    #         'd': {'primitive': 'Push', 'type': 'Fundamental Symbolic Operation'},
 # #    #         'l': {'primitive': 'Pull', 'type': 'Fundamental Symbolic Ope
 
-# Install [libarchive](https://pypi.python.org/pypi/libarchive) (a 7zip reader)
+# prompt: Fundamental Symbolic Operation'},
+# # # 'l': {'primitive': 'Pull', 'type': 'Fundamental Symbolic Ope
+# Install libarchive (a 7zip reader)
 # https://pypi.python.org/pypi/libarchive
-!apt-get -qq install -y libarchive-dev && pip install -U libarchive
-# Install GraphViz & [PyDot](https://pypi.python.org/pypi/pydot)
+# !apt-get -qq install -y libarchive-dev && pip install -U libarchive
+# Install GraphViz & PyDot
 # https://pypi.python.org/pypi/pydot
-!apt-get -qq install -y graphviz && pip install pydot
-# Install [cartopy](http://scitools.org.uk/cartopy/docs/latest/)
-!pip install cartopy
+# !apt-get -qq install -y graphviz && pip install pydot
+# Install cartopy
+# !pip install cartopy
+
+!pip install libarchive
